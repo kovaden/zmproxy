@@ -1,0 +1,119 @@
+h2 {
+    line-height: 1em;
+    margin-bottom: 0.5em;
+}
+.hero-unit {
+    height: 104px;
+    padding: 0;
+    background: url("../img/header.png") no-repeat 100% 50% #0154a2;
+    color: white;
+}
+.hero-unit h1 {
+    line-height: 100px;
+    margin-left: 30px;
+}
+/* login form */
+.navbar-fixed-top form.well {
+    border: none;
+    margin-bottom: 0;
+    background-color: #fff;
+    box-shadow: none;
+}
+#login {
+    margin-right: 30px;
+}
+.usermenu li {
+    list-style: none;
+    width: 300px;
+}
+.usermenu .divider {
+    background-color: #E5E5E5;
+    border-bottom: 1px solid #FFFFFF;
+    height: 1px;
+    margin: 8px 1px;
+    overflow: hidden;
+}
+
+/* carousel */
+#myCarousel.vertical {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 260px;
+}
+#myCarousel .carousel-inner {
+    margin: 0 80px;
+    width: auto;
+}
+#myCarousel .carousel-inner a {
+    text-align: center;
+    display: block;
+}
+#myCarousel.vertical .carousel-inner {
+    margin: 0;
+}
+
+.carousel-control {
+    font-size: 40px;
+    line-height: 40px;
+}
+.vertical .carousel-inner {
+    height: 100%;
+}
+
+.carousel.vertical .item {
+    -webkit-transition: 0.6s ease-in-out top;
+    -moz-transition: 0.6s ease-in-out top;
+    -ms-transition: 0.6s ease-in-out top;
+    -o-transition: 0.6s ease-in-out top;
+    transition: 0.6s ease-in-out top;
+}
+
+.carousel.vertical .active {
+    top: 0;
+}
+
+.carousel.vertical .next {
+    top: 100%;
+}
+
+.carousel.vertical .prev {
+    top: -100%;
+}
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+    top: 0;
+}
+
+.carousel.vertical .active.left {
+    top: -100%;
+}
+
+.carousel.vertical .active.right {
+    top: 100%;
+}
+
+.carousel.vertical .item {
+    left: 0;
+}
+
+.thumbnail a {
+    min-height: 100px;
+    min-width: 100px;
+    display: block;
+}
+#cam1 {
+    background: url(../img/thumbnails/cam1.jpg) 0 0 no-repeat;
+}
+
+tr.active {
+    background-color: #a9dba9;
+}
+
+td.l {
+    border-left: dashed 1px steelblue;
+}
+td.r {
+    border-right: dashed 1px steelblue;
+    
+}

@@ -1,0 +1,78 @@
+#
+#  ZMProxy configuration file
+#
+
+import zmplib
+
+#
+# Port for the clients
+#
+port = 8082
+
+#
+#  Select which source list to use
+#
+#   False - read XMLRPC server at 
+#
+use_local_sources = True
+
+cam_source_server = 'http://localhost/index.php/agent'
+
+#
+# Inputs list
+#
+
+sources = [
+    zmplib.Source(
+                  id=1,         # Unique input identifier  
+                  type='zm',    # Input type. zm|file
+                  name='src1',   # Input name
+                  host='10.3.7.9',   # ZM hostname or IP
+                  port=80,
+                  path='/index.php?view=watch&mid=2', # Path on the ZM server to the monitor channel
+                  interval=None, # Interval for file input between frames   
+                  queuesz=100,   # size of the queue (?)
+                  user='admin',  # Credentials for ZM server 
+                  passwd='2012CAMroute' # Credentials for ZM server
+                  ),
+    zmplib.Source(
+                  id=2,         # Unique input identifier  
+                  type='zm',    # Input type. zm|file
+                  name='src2',   # Input name
+                  host='10.3.7.9',   # ZM hostname or IP
+                  port=80,
+                  path='/index.php?view=watch&mid=3', # Path on the ZM server to the monitor channel
+                  interval=None, # Interval for file input between frames   
+                  queuesz=100,   # size of the queue (?)
+                  user='admin',  # Credentials for ZM server 
+                  passwd='2012CAMroute' # Credentials for ZM server
+                  ),
+    zmplib.Source(
+                  id=3,         # Unique input identifier  
+                  type='zm',    # Input type. zm|file
+                  name='src3',   # Input name
+                  host='10.3.7.12',   # ZM hostname or IP
+                  port=80,
+                  path='/index.php?view=watch&mid=15', # Path on the ZM server to the monitor channel
+                  interval=None, # Interval for file input between frames   
+                  queuesz=100,   # size of the queue (?)
+                  user='admin',  # Credentials for ZM server 
+                  passwd='2012CAMroute' # Credentials for ZM server
+                  ),
+    zmplib.Source(
+                  id=4,         # Unique input identifier  
+                  type='zm',    # Input type. zm|file
+                  name='src4',   # Input name
+                  host='10.3.7.13',   # ZM hostname or IP
+                  port=80,
+                  path='/index.php?view=watch&mid=2', # Path on the ZM server to the monitor channel
+                  interval=None, # Interval for file input between frames   
+                  queuesz=100,   # size of the queue (?)
+                  user='admin',  # Credentials for ZM server 
+                  passwd='2012CAMroute' # Credentials for ZM server
+                  )
+#           ,
+#        
+#    zmplib.Source(id=2, type='file', name='test_in', host=None, 
+#            path='../test_inp', interval=100, queuesz=50, user=None, passwd=None)
+    ]
